@@ -502,10 +502,6 @@ var tableData = [
     }
 ]
 
-/*
-    1 - Loop Through Array & Access each value
-  2 - Create Table Rows & append to table
-*/
 
 
 var state = {
@@ -525,12 +521,7 @@ function buildTable() {
     var myList = data.querySet
 
     for (var i = 1 in myList) {
-        //Keep in mind we are using "Template Litterals to create rows"
-        // var row = `<tr>
-        //           <td>${myList[i].id}</td>
-        //           <td>${myList[i].name}</td>
-        //           <td>${myList[i].email}</td>
-        //           `
+       
         var row = document.createElement("tr")
         var td3 = creathtrth('td', myList[i].id)
         var td4 = creathtrth('td', myList[i].name)
